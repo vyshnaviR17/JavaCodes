@@ -24,5 +24,34 @@ public class inssertEle {
 		}
 	}
 }
-----------------------------------------------
+
+//count duplicates in an array
+public class CountDuplicateEle {
+	public static void main(String[] args) {
+		int[] arr = {2,2,3,4,3,4,5,5,8,8,1,1,0};
+		int count = 0;
+		for(int i=0; i<arr.length; i++) {
+			for(int j=i+1; j<arr.length; j++) {
+				if(arr[i]==arr[j]) {
+					count++;
+				}
+			}
+		}
+		System.out.println(count);
+	}
+}
+
+//print the duplicate elements in an array
+public class DisplayDuplicateEle {
+	public static void main(String[] args) {
+		int[] arr = {2,6,6,4,5,9,2,3,7,8};
+		for(int i=0; i<arr.length; i++) {
+			for(int j=i+1; j<arr.length; j++) {
+				if(arr[i]==arr[j]) {
+					System.out.print(arr[i]+" ");
+				}
+			}
+		}
+	}
+}
   
